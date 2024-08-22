@@ -150,7 +150,7 @@ header .navbar .phone-number a:hover {
     position: absolute;
     bottom: 0;
     right: 0;
-    max-width: 310px;
+    /* max-width: 310px; */
     width: 100%;
     padding: 1.5rem;
 }
@@ -328,5 +328,28 @@ header .navbar .phone-number a:hover {
     margin-top: 20px;
 }
 
-/*--------------- Header Section------------- */
-/*--------------- Header Section------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------- Media Query Section------------- */
+@media screen and (max-width: 998px) {
+    header {
+        position: absolute;
+        width: 100%;
+    }
+
+    .hero .content-left {
+        margin-top: 76px;
+    }
+}

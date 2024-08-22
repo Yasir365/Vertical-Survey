@@ -1,11 +1,12 @@
 $('.owl-carousel').owlCarousel({
     stagePadding: 50,
     loop: true,
-    margin: 10,
+    margin: 30,
     nav: true,
     autoplay: true,
     autoplayTimeout: 1000,
     autoplayHoverPause: true,
+    smartSpeed: 1100,
     navText: [
         "<i class='fa fa-caret-left'></i>",
         "<i class='fa fa-caret-right'></i>"
