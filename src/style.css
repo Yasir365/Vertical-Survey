@@ -141,7 +141,9 @@ header .navbar .phone-number a:hover {
 
 .hero .content-right img {
     width: 100%;
+    height: 100%;
     background-size: cover;
+    background-position: center;
 }
 
 .hero .content-right form {
@@ -187,7 +189,6 @@ header .navbar .phone-number a:hover {
 
 .our-speciality .speciality-name {
     display: flex;
-    /* justify-content: space-between; */
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
     padding-top: 8px;
@@ -216,6 +217,33 @@ header .navbar .phone-number a:hover {
     color: var(--text-black);
     font-size: 1rem;
     margin-top: 20px;
+}
+
+
+
+/*--------------- Header Section------------- */
+.our-clients {
+    padding: 4rem 0px;
+}
+
+.our-clients .owl-carousel {
+    margin-top: 2rem;
+}
+
+.our-clients img {
+    height: 70px;
+}
+
+.owl-theme .owl-dots {
+    margin-top: 16px;
+}
+
+.owl-theme .owl-dot.active {
+    color: gray;
+}
+
+.owl-theme .owl-nav {
+    display: none;
 }
 
 
@@ -300,6 +328,5 @@ header .navbar .phone-number a:hover {
     margin-top: 20px;
 }
 
-/*--------------- Header Section------------- */
 /*--------------- Header Section------------- */
 /*--------------- Header Section------------- */
