@@ -399,9 +399,7 @@ header .navbar .phone-number a:hover {
     font-size: 1.5rem;
 }
 
-.map-section input[type="text"],
-.map-section input[type="tel"],
-.map-section input[type="email"],
+.map-section input,
 .map-section textarea {
     padding: 10px;
     margin-bottom: 20px;
@@ -453,4 +451,65 @@ header .navbar .phone-number a:hover {
     .hero .content-left {
         margin-top: 76px;
     }
+}
+
+
+@media screen and (max-width: 768px) {
+    .ready-section .left-content div {
+        font-size: 1.5rem;
+        width: 70%;
+    }
+    
+    .ready-section .right-content {
+        padding: 1rem 2rem;
+    }
+    
+    .ready-section .right-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .map-section iframe{
+        height: 350px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .map-container form{
+        position: static;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .map-section label{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 525px) {
+    header .navbar{
+        padding: .5rem 0 ;
+    }
+    .ready-section .left-content div {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .map-section form{
+        padding: 1rem;
+    }
+
+    .map-section form div{
+        flex-direction: column;
+    } 
+    .map-section form label{
+        width: 100%;
+        text-align: start;
+    }
+    .map-section input,
+    .map-section textarea {
+        width: 100%;
+    }
+
 }
