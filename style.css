@@ -150,7 +150,6 @@ header .navbar .phone-number a:hover {
     position: absolute;
     bottom: 0;
     right: 0;
-    /* max-width: 310px; */
     width: 100%;
     padding: 1.5rem;
 }
@@ -158,7 +157,7 @@ header .navbar .phone-number a:hover {
 .content-right form input {
     margin-bottom: 10px;
     background-color: var(--text-white);
-    border-radius: 12px;
+    border-radius: 8px;
     height: 30px;
     border: none;
     padding: 8px;
@@ -330,8 +329,110 @@ header .navbar .phone-number a:hover {
 
 
 
+/*--------------- Ready Section------------- */
+.ready-section {
+    padding: 4rem 0 0 0;
+}
+
+.ready-section .left-content {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ready-section .left-content div {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 900;
+    width: 50%;
+    text-align: center;
+}
+
+.ready-section .right-content {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding: 1rem 4rem;
+    color: var(--primary-color);
+}
+
+.ready-section .right-content h3 {
+    margin-bottom: 20px;
+}
 
 
+
+
+/*--------------- Map Section------------- */
+.map-section .map-container {
+    position: relative;
+}
+
+.map-section iframe{
+    width: 100%;
+    height: 800px;
+}
+
+.map-section form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 10%;
+    width: 60%;
+    right: 20px;
+    border-radius: 20px;
+    padding: 3rem;
+}
+
+.map-section form div{
+    display: flex;
+}
+
+.map-section label {
+    color: var(--text-white);
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 30%;
+    text-align: end;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.map-section input[type="text"],
+.map-section input[type="tel"],
+.map-section input[type="email"],
+.map-section textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    font-size: 16px;
+    background-color: var(--text-white);
+}
+
+.map-section textarea {
+    resize: none;
+}
+
+.map-section button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background: transparent;
+    display: inline-block;
+    font-size: 1.1  rem;
+    font-weight: 300;
+}
+
+.map-section button:hover {
+    color: var(--secondary-light-color);
+}
 
 
 
