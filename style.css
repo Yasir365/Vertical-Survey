@@ -31,10 +31,6 @@ a {
     cursor: pointer;
 }
 
-.relative {
-    position: relative;
-}
-
 .heading {
     font-weight: bold;
     text-transform: uppercase;
@@ -184,6 +180,8 @@ header .navbar .phone-number a:hover {
 /*--------------- Why Us Section------------- */
 .our-speciality {
     padding: 4rem 0px;
+    position: relative;
+    z-index: 2;
 }
 
 .our-speciality .speciality-name {
@@ -200,6 +198,15 @@ header .navbar .phone-number a:hover {
 
 .our-speciality .speciality-name div:first-child {
     width: 70%;
+}
+
+
+.our-speciality img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
 }
 
 
@@ -223,6 +230,8 @@ header .navbar .phone-number a:hover {
 /*--------------- Header Section------------- */
 .our-clients {
     padding: 4rem 0px;
+    position: relative;
+    z-index: 2;
 }
 
 .our-clients .owl-carousel {
@@ -243,6 +252,15 @@ header .navbar .phone-number a:hover {
 
 .owl-theme .owl-nav {
     display: none;
+}
+
+.our-clients .side-arrow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 50px;
+    height: 100px;
 }
 
 
@@ -274,8 +292,9 @@ header .navbar .phone-number a:hover {
     z-index: 2;
 }
 
-.process-icon i {
-    font-size: 40px;
+.process-icon img {
+    width: 50px;
+    height: 45px;
 }
 
 .process-number {
@@ -319,6 +338,8 @@ header .navbar .phone-number a:hover {
     background-color: var(--text-white);
     padding: 4rem 0px;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 .experts-section .description {
@@ -326,6 +347,14 @@ header .navbar .phone-number a:hover {
     font-size: 1rem;
     margin-top: 20px;
 }
+
+.experts-section img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
 
 
 
@@ -347,6 +376,8 @@ header .navbar .phone-number a:hover {
 /*--------------- Ready Section------------- */
 .ready-section {
     padding: 4rem 0 0 0;
+    position: relative;
+    z-index: 2
 }
 
 .ready-section .left-content {
@@ -579,9 +610,11 @@ header .navbar .phone-number a:hover {
     display: flex;
 }
 
-.footer-item p {
+.footer-item p,
+.footer-item a {
     font-size: 14px;
     line-height: 1.6;
+    color: var(--text-white);
 }
 
 .icon i {
@@ -621,11 +654,16 @@ header .navbar .phone-number a:hover {
 @media screen and (max-width: 998px) {
     header {
         position: absolute;
+        top: 0;
         width: 100%;
     }
 
     .hero .content-left {
         margin-top: 76px;
+    }
+
+    .services {
+        margin-top: 100px;
     }
 }
 
@@ -702,6 +740,32 @@ header .navbar .phone-number a:hover {
 
     .footer-item {
         width: 100%;
+    }
+
+    .footer-item div {
+        margin-bottom: 4px;
+    }
+
+    .copyright-section div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .services .apply-now {
+        width: 50px;
+        margin-left: 4px;
+    }
+
+    .our-speciality img {
+        display: none;
+    }
+
+    .our-clients .side-arrow {
+        display: none;
+    }
+
+    .experts-section img {
+        display: none;
     }
 
 }
