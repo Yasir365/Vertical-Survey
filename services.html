@@ -3,19 +3,211 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.ico">
         <title>Vertical Survey</title>
-    
+
         <!-- Import Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
         <!-- Import Fontawesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+        
+        <!-- Owl JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
         <!-- Import Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
         <!-- Import Styles -->
         <link rel="stylesheet" href="./style.css">
     </head>
-<body>
-    
-</body>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <img class="image-flude navbar-brand" src="./assets/logo.png" alt="logo">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarContent">
+                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                  </ul>
+                  
+                  <div class="phone-number">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>CALL US</span>
+                    <a href="tel:+91 123456789">+91 123456789</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+        </header>
+
+
+        <div class="container mt-5">
+            <div class="row services">
+                <div class="col-md-12">
+                    <div class="item">
+                        <div>
+                            <div class="item-title">BESSCOM NOC</div>
+                            <div class="item-desc">Ensuring your project meets all electrical safety standards.</div>
+                        </div>
+                        <button onClick="openModal(1)" class="apply-now">Apply Now</button>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div class="item-title">KSFES NOC / CC (Fire Department)</div>
+                            <div class="item-desc">Compliance with fire safety regulations.</div>
+                        </div>
+                        <button onClick="openModal(2)" class="apply-now">Apply Now</button>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div class="item-title">BDA Development Plan Approval</div>
+                            <div class="item-desc">Securing development plan approvals from the Bangalore Development Authority.</div>
+                        </div>
+                        <button onClick="openModal(3)" class="apply-now">Apply Now</button>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div class="item-title">BBMP Trade License</div>
+                            <div class="item-desc">Assisting in obtaining trade licenses from the Bruhat Bengaluru Mahanagara Palike.</div>
+                        </div>
+                        <button onClick="openModal(4)" class="apply-now">Apply Now</button>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div class="item-title">AAI NOC</div>
+                            <div class="item-desc">Navigating the complexities of securing NOCs from the Airports Authority of India.</div>
+                        </div>
+                        <button onClick="openModal(5)" class="apply-now">Apply Now</button>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div class="item-title">HAL NOC</div>
+                            <div class="item-desc">Compliance with Hindustan Aeronautics Limited regulations.</div>
+                        </div>
+                        <button onClick="openModal(6)" class="apply-now">Apply Now</button>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div class="item-title">IAF NOC</div>
+                            <div class="item-desc">Coordinating with the Indian Air Force for necessary approvals.</div>
+                        </div>
+                        <button onClick="openModal(7)" class="apply-now">Apply Now</button>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div class="item-title">BSNL NOC</div>
+                            <div class="item-desc">Ensuring telecom compliance through Bharat Sanchar Nigam Limited.</div>
+                        </div>
+                        <button onClick="openModal(8)" class="apply-now">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="services-section">
+            <div class="container">
+              <h2 class="heading">
+                <span class="blue">OUR </span> <span>SERVICES</span>
+              </h2>
+              <p class="description">
+                We specialize in obtaining the necessary No Objection Certificates (NOCs) and approvals from various authorities, which are crucial for the successful execution of your projects.              </p>
+            </div>
+        </section>
+
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <div>
+                    <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                    <p>JD Blossom, Seegehalli, K.R.Puram, <br> Bangalore - 560 049<br> reach@verticalsurveys.in</p>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <div>
+                    <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                    <p>+91 782 934 2473</p>
+                    </div>
+                    <div>
+                    <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                    <p>support@verticalsurveys.in</p>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <p>We are available from Monday - Friday</p>
+                    <p>09.00 AM - 05.00 PM</p>
+                </div>
+            </div>
+        </footer>
+            
+
+        <section class="copyright-section">
+            <div>verticalsurveys.inⓇ</div>
+            <div>All rights reserved &copy;</div>
+        </section>
+        
+
+        <div class="modal custom-modal" id="applyService" role="dialog" aria-labelledby="applyServiceLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModal()">
+                            <span aria-hidden="true">CLOSE X</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="NAME">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="EMAIL ADDRESS">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="phone" placeholder="PHONE">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="project-location" placeholder="PROJECT LOCATION">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="service-needed" placeholder="SERVICE NEEDED">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="comments" placeholder="ADDITIONAL COMMENTS (OPTIONAL)">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary submit-button" onclick="applyService()">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
 </html>

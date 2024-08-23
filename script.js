@@ -23,3 +23,16 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+
+function openModal(service) {
+    $('#applyService').modal('show');
+}
+
+function closeModal() {
+    $('#applyService').modal('hide');
+}
+
+function applyService() {
+    closeModal();
+}
