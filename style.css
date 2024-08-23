@@ -671,6 +671,10 @@ header .navbar .phone-number a:hover {
     color: var(--text-white);
 }
 
+.footer .second {
+    margin-bottom: 16px;
+}
+
 .icon i {
     font-size: 20px;
     margin-right: 10px;
@@ -798,6 +802,10 @@ header .navbar .phone-number a:hover {
 
     .footer-item div {
         margin-bottom: 4px;
+    }
+
+    .footer .second {
+        margin-bottom: 0px;
     }
 
     .copyright-section div {
