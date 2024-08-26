@@ -752,6 +752,19 @@ header .navbar .phone-number a:hover {
     .footer-item:nth-child(2) {
         border: none;
     }
+
+    .our-speciality img {
+        right: -19px;
+        width: 65px;
+    }
+
+    .our-clients .side-arrow {
+        top: -80px;
+    }
+
+    .experts-section img {
+        width: 50px;
+    }
 }
 
 
@@ -826,16 +839,9 @@ header .navbar .phone-number a:hover {
         text-align: start;
     }
 
-    .our-speciality img {
-        display: none;
-    }
-
-    .our-clients .side-arrow {
-        display: none;
-    }
-
     .experts-section img {
-        display: none;
+        height: 8rem;
+        width: 30px;
     }
 
 }
