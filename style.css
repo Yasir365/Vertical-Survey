@@ -765,16 +765,16 @@ header .navbar .phone-number a:hover {
     .experts-section img {
         width: 50px;
     }
-}
 
-
-@media screen and (max-width: 700px) {
     .map-container form {
         position: static;
         width: 100%;
         border-radius: 0;
     }
+}
 
+
+@media screen and (max-width: 700px) {
     .map-section label {
         font-size: 1rem;
     }
