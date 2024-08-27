@@ -191,7 +191,8 @@ header .navbar .phone-number a:hover {
     position: absolute;
     bottom: -4rem;
     right: 1rem;
-    z-index: 2;
+    z-index: 10;
+    cursor: pointer;
 }
 
 .hero .whatsapp-container .whatsapp {
