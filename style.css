@@ -222,20 +222,21 @@ header .navbar .phone-number a:hover {
     border: none;
 }
 
-.our-speciality .speciality-name div:first-child {
-    width: 40%;
+.our-speciality .speciality-name div:nth-child(1),
+.our-speciality .speciality-name div:nth-child(3){
+    width: 30%;
+
 }
 
 .our-speciality .speciality-name div:nth-child(2),
-.our-speciality .speciality-name div:nth-child(3),
 .our-speciality .speciality-name div:nth-child(4) {
     width: 20%;
-    text-align: end;
 }
 
 .our-speciality .speciality-name div:nth-child(1),
 .our-speciality .speciality-name div:nth-child(3) {
     font-weight: 800;
+    cursor: pointer;
 }
 
 .our-speciality .gray {
