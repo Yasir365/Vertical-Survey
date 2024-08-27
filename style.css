@@ -9,47 +9,16 @@
     --bg-silver: #ffffffcc;
 }
 
-@font-face {
-    src: url(./assets/Font/Montserrat-Bold.ttf);
-    font-family: m-bold;
-    font-display: swap;
-}
-
-@font-face {
-    src: url(./assets/Font/Montserrat-Medium.ttf);
-    font-family: m-medium;
-    font-display: swap;
-}
-
-@font-face {
-    src: url(./assets/Font/Montserrat-SemiBold.ttf);
-    font-family: m-sami;
-    font-display: swap;
-}
-
-@font-face {
-    src: url(./assets/Font/BebasNeue-Regular.otf);
-    font-family: b-regular;
-    font-display: swap;
-}
-
-@font-face {
-    src: url(./assets/Font/BebasNeue-Bold.otf);
-    font-family: b-bold;
-    font-display: swap;
-}
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    /* font-family: "m-medium", sans-serif; */
     border: none;
     outline: none;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -72,7 +41,6 @@ a {
     margin-bottom: 1rem;
     text-align: center;
     font-weight: 900;
-    /* font-family: "b-bold", sans-serif; */
 }
 
 .heading span {
@@ -88,12 +56,17 @@ a {
 /*--------------- Header Section------------- */
 header .navbar {
     background-color: var(--primary-color);
-    padding: .5rem 2rem;
+    padding: 0 2rem;
+}
+
+header .logo-container {
+    width: 176px;
+    height: 80px;
 }
 
 header .navbar img {
-    height: 70px;
-    width: 150px;
+    padding: 0;
+    width: 100%;
 }
 
 header .navbar .navbar-toggler button:focus:not(:focus-visible) {
@@ -704,6 +677,19 @@ header .navbar .phone-number a:hover {
     color: var(--primary-color);
 }
 
+.copyright-section .register {
+    position: relative;
+}
+
+.copyright-section .register span {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    font-size: 10px;
+}
+
 
 
 
@@ -731,6 +717,24 @@ header .navbar .phone-number a:hover {
 
 
 @media screen and (max-width: 768px) {
+    .our-speciality .speciality-name {
+        border-bottom: none;
+        padding-top: 0;
+    }
+
+    .our-speciality .speciality-name div:first-child,
+    .our-speciality .speciality-name div:nth-child(3) {
+        width: 70%;
+        text-align: start;
+        margin-bottom: 6px;
+    }
+
+    .our-speciality .speciality-name div:nth-child(2),
+    .our-speciality .speciality-name div:nth-child(4) {
+        width: 30%;
+        text-align: end;
+    }
+
     .ready-section .left-content div {
         font-size: 1.5rem;
         width: 70%;
@@ -835,17 +839,34 @@ header .navbar .phone-number a:hover {
         margin-left: 4px;
     }
 
+    .our-speciality .speciality-name {
+        position: relative;
+        z-index: 2;
+    }
+
     .our-speciality .speciality-name div:first-child,
-    .our-speciality .speciality-name div:nth-child(2),
-    .our-speciality .speciality-name div:nth-child(3),
-    .our-speciality .speciality-name div:nth-child(4) {
-        width: 100%;
+    .our-speciality .speciality-name div:nth-child(3) {
+        width: 50%;
         text-align: start;
+        margin-bottom: 6px;
+    }
+
+    .our-speciality .speciality-name div:nth-child(2),
+    .our-speciality .speciality-name div:nth-child(4) {
+        width: 50%;
+        text-align: end;
+    }
+
+    .our-clients img {
+        display: none;
+    }
+
+    .our-speciality img {
+        display: none;
     }
 
     .experts-section img {
-        height: 8rem;
-        width: 30px;
+        display: none;
     }
 
 }
