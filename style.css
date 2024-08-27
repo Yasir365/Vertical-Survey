@@ -719,6 +719,11 @@ header .navbar .phone-number a:hover {
         position: absolute;
         top: 0;
         width: 100%;
+        z-index: 100;
+    }
+
+    header .navbar{
+        padding: .5rem 2rem;
     }
 
     .hero .content-left {
@@ -849,9 +854,13 @@ header .navbar .phone-number a:hover {
         text-align: center;
     }
 
+    .services .item{
+        flex-wrap: wrap;
+    }
     .services .apply-now {
-        width: 50px;
-        margin-left: 4px;
+        width: 100%;
+        text-align: right;
+        margin-right: 8px;
     }
 
     .our-speciality .speciality-name {
