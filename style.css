@@ -23,6 +23,7 @@ body {
 }
 
 a {
+    position: relative;
     text-decoration: none;
 }
 
@@ -51,7 +52,19 @@ a {
     color: var(--primary-color);
 }
 
+.whatsapp-container {
+    width: 50px;
+    position: fixed;
+    bottom: 25vh;
+    right: 1rem;
+    z-index: 10;
+    cursor: pointer;
+}
 
+.whatsapp-container .whatsapp {
+    width: 100%;
+    height: 100%;
+}
 
 /*--------------- Header Section------------- */
 header .navbar {
@@ -186,20 +199,6 @@ header .navbar .phone-number a:hover {
     background-color: var(--secondary-light-color);
 }
 
-.hero .whatsapp-container {
-    width: 50px;
-    position: absolute;
-    bottom: -4rem;
-    right: 1rem;
-    z-index: 10;
-    cursor: pointer;
-}
-
-.hero .whatsapp-container .whatsapp {
-    width: 100%;
-    height: 100%;
-}
-
 
 /*--------------- speciality Section------------- */
 .our-speciality {
@@ -223,7 +222,7 @@ header .navbar .phone-number a:hover {
 }
 
 .our-speciality .speciality-name div:nth-child(1),
-.our-speciality .speciality-name div:nth-child(3){
+.our-speciality .speciality-name div:nth-child(3) {
     width: 30%;
 
 }
@@ -723,7 +722,7 @@ header .navbar .phone-number a:hover {
         z-index: 100;
     }
 
-    header .navbar{
+    header .navbar {
         padding: .5rem 2rem;
     }
 
@@ -738,6 +737,10 @@ header .navbar .phone-number a:hover {
 
 
 @media screen and (max-width: 768px) {
+    .whatsapp-container {
+        bottom: 5vh;
+    }
+
     .our-speciality .speciality-name {
         border-bottom: none;
         padding-top: 0;
@@ -855,9 +858,10 @@ header .navbar .phone-number a:hover {
         text-align: center;
     }
 
-    .services .item{
+    .services .item {
         flex-wrap: wrap;
     }
+
     .services .apply-now {
         width: 100%;
         text-align: right;
