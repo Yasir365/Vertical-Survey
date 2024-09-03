@@ -46,7 +46,7 @@ $('.owl-carousel').owlCarousel({
 })
 
 
-function openModal(service) {
+function openModal() {
     $('#applyService').modal('show');
 }
 
