@@ -550,6 +550,16 @@ header .navbar .phone-number a:hover {
     font-weight: 700;
 }
 
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-container button{
+    background-color: transparent;
+}
+
 .services .apply-now {
     color: gray;
     font-size: 14px;
@@ -562,6 +572,15 @@ header .navbar .phone-number a:hover {
     text-decoration: underline;
 }
 
+.services .fa-download {
+    font-size: 1rem;
+    color: var(--text-black);
+    background-color: none;
+}
+
+.services .fa-download:hover {
+    color: var(--primary-color);
+}
 
 
 /*--------------- Apply Service Modal------------- */

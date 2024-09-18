@@ -57,3 +57,11 @@ function closeModal() {
 function applyService() {
     closeModal();
 }
+
+function downloadPdf() {
+    const pdfPath = './assets/services.pdf';
+    const link = document.createElement('a');
+    link.href = pdfPath;
+    link.download = 'Vertical-Servvey Services.pdf';
+    link.click();
+  }
